@@ -99,7 +99,7 @@ const Hero = ({ content }) => {
     }
     pageLoadSequence()
   }, [isIntroDone, eControls, gControls, sControls, uControls])
-  
+
   return (
     <StyledSection id="hero">
       {!isIntroDone && <SplashScreen />}
@@ -108,9 +108,9 @@ const Hero = ({ content }) => {
           <h1 className="title">
             <div className="greetings">
               {frontmatter.greetings}
-              <motion.div animate={eControls} style={{ originX: 0.7, originY: 0.7 }}>
+              {/* <motion.div animate={eControls} style={{ originX: 0.7, originY: 0.7 }}>
                 <Img className="emoji" fluid={frontmatter.icon.childImageSharp.fluid} />
-              </motion.div>
+              </motion.div> */}
             </div>
             {frontmatter.title}
           </h1>
