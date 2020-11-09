@@ -22,12 +22,12 @@ module.exports = {
       url: "https://www.linkedin.com/in/elizabethgroton/",
     },
     {
-      name: "Medium",
-      url: "https://grotoned.medium.com/",
-    },
-    {
       name: "Github",
       url: "https://github.com/betsyg6",
+    },
+    {
+      name: "Medium",
+      url: "https://grotoned.medium.com/",
     },
   ],
 
