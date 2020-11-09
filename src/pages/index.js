@@ -13,12 +13,12 @@ import Contact from "../components/sections/contact"
 import { splashScreen, seoTitleSuffix } from "../../config"
 
 const IndexPage = ({ data }) => {
-  const { seoTitle, useSeoTitleSuffix } = data.index.edges[0].node.frontmatter
-  const withSuffix = useSeoTitleSuffix === "true"
+  // const { seoTitle, useSeoTitleSuffix } = data.index.edges[0].node.frontmatter
+  // const withSuffix = useSeoTitleSuffix === "true"
   return (
     <Layout splashScreen={splashScreen}>
       <SEO
-        title={withSuffix ? `${seoTitle} - ${seoTitleSuffix}` : `${seoTitle}`}
+        title="Betsy Groton"
       />
       <Hero content={data.hero.edges} />
       {/* Articles is populated via Medium RSS Feed fetch */}
