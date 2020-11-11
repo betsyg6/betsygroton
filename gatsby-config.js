@@ -64,7 +64,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Sacramento`,
+            family: `League Script`,
           },
         ],
       },

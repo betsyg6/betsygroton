@@ -44,10 +44,10 @@ const StyledContentWrapper = styled(ContentWrapper)`
     .section-title {
       padding-right: 2.5rem;
       padding-left: 2.5rem;
-      font-size: 4rem;
+
       text-shadow: 0.5px 0.5px 1px #373636;
       color: ${({ theme }) => theme.colors.pink};
-      font-family: ${({ theme }) => theme.fonts.headings};
+      font-family: ${({ theme }) => theme.fonts.primary};
       @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
         padding-right: 0;
         padding-left: 0;

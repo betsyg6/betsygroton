@@ -15,7 +15,7 @@ module.exports = {
   },
   fonts: {
     primary: "Roboto, Arial, sans-serif",
-    headings: "Sacramento",
+    headings: "League Script",
   },
   borderRadius: "1rem",
   pageWidth: "62.5rem",

@@ -31,9 +31,9 @@ const StyledContentWrapper = styled(ContentWrapper)`
       padding-right: 2.5rem;
       padding-left: 2.5rem;
       color: ${({ theme }) => theme.colors.pink};
-      font-size: 4rem;
+
       text-shadow: 0.5px 0.5px 1px #373636;
-      font-family: ${({ theme }) => theme.fonts.headings};
+      font-family: ${({ theme }) => theme.fonts.primary};
       @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
         padding-right: 0;
         padding-left: 0;
@@ -154,7 +154,7 @@ const Articles = () => {
       animate={articlesControls}
     >
       <StyledContentWrapper>
-        <h3 className="section-title">articles</h3>
+        <h3 className="section-title">Articles</h3>
         <div className="articles">
           {articles
             ? articles.map(item => (
