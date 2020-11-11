@@ -34,6 +34,10 @@ const StyledContentWrapper = styled(ContentWrapper)`
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      font-size: 6rem;
+      text-shadow: 1px 1px 2px #373636;
+      color: ${({ theme }) => theme.colors.pink};
+      font-family: ${({ theme }) => theme.fonts.headings};
     }
     .emoji {
       margin-left: 0.75rem;
@@ -52,11 +56,11 @@ const StyledContentWrapper = styled(ContentWrapper)`
       }
     }
     .subtitle {
-      margin-top: -0.75rem;
+      margin-bottom: 1rem;
     }
     .description {
       font-size: 1.125rem;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
   }
 `

@@ -44,6 +44,10 @@ const StyledContentWrapper = styled(ContentWrapper)`
     .section-title {
       padding-right: 2.5rem;
       padding-left: 2.5rem;
+      font-size: 4rem;
+      text-shadow: 0.5px 0.5px 1px #373636;
+      color: ${({ theme }) => theme.colors.pink};
+      font-family: ${({ theme }) => theme.fonts.headings};
       @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
         padding-right: 0;
         padding-left: 0;
@@ -336,19 +340,19 @@ const Projects = ({ content }) => {
       </StyledContentWrapper>
       {sectionDetails.frontmatter.buttonVisible === "true" && (
         <motion.a
-        ref={bRef}
-        variants={bVariants}
-        animate={bOnScreen ? "visible" : "hidden"}
-        className="cta-btn"
-        href={sectionDetails.frontmatter.buttonUrl}
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-        aria-label="External Link"
-      >
-        <Button type="button" textAlign="center" color="primary" center>
-          {sectionDetails.frontmatter.buttonText}
-        </Button>
-      </motion.a>
+          ref={bRef}
+          variants={bVariants}
+          animate={bOnScreen ? "visible" : "hidden"}
+          className="cta-btn"
+          href={sectionDetails.frontmatter.buttonUrl}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          aria-label="External Link"
+        >
+          <Button type="button" textAlign="center" color="primary" center>
+            {sectionDetails.frontmatter.buttonText}
+          </Button>
+        </motion.a>
       )}
     </StyledSection>
   )

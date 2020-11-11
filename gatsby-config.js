@@ -1,5 +1,5 @@
-const config = require('./config');
-const theme = require('./src/styles/Theme')
+const config = require("./config")
+const theme = require("./src/styles/Theme")
 
 module.exports = {
   siteMetadata: {
@@ -57,6 +57,16 @@ module.exports = {
       options: {
         path: `${__dirname}/content`,
         name: `content`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Sacramento`,
+          },
+        ],
       },
     },
   ],

@@ -29,6 +29,10 @@ const StyledContentWrapper = styled(ContentWrapper)`
     }
     .section-title {
       margin-bottom: 2rem;
+      color: ${({ theme }) => theme.colors.pink};
+      text-shadow: 0.5px 0.5px 1px #373636;
+      font-size: 4rem;
+      font-family: ${({ theme }) => theme.fonts.headings};
     }
     .inner-wrapper {
       display: flex;

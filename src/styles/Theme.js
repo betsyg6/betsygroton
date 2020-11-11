@@ -1,10 +1,11 @@
 module.exports = {
   colors: {
     primary: "#000000",
-    secondary: "#F4D9FF",
+    secondary: "#CCD4FF",
     tertiary: "#F2F2F2",
     text: "#000000",
     background: "#ffffff",
+    pink: "#899BFD",
   },
   breakpoints: {
     xs: "480px",
@@ -14,6 +15,7 @@ module.exports = {
   },
   fonts: {
     primary: "Roboto, Arial, sans-serif",
+    headings: "Sacramento",
   },
   borderRadius: "1rem",
   pageWidth: "62.5rem",
