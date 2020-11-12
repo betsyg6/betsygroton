@@ -3,7 +3,8 @@ module.exports = {
   siteTitle: "Betsy Groton",
   siteShortTitle: "BG", // Used as logo text in header, footer, and splash screen
   siteDescription: "Betsy Groton's Software Engineering Portfolio.",
-  siteUrl: "https://betsygroton.netlify.app/", //not sure yet
+  siteUrl: "http://www.betsygroton.com/", //not sure yet
+  image: "config/portfolio.png",
   siteLanguage: "en_US",
   siteIcon: "content/favicon.png", // Relative to gatsby-config file
   seoTitleSuffix: "Portfolio", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
