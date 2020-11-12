@@ -1,11 +1,11 @@
 module.exports = {
   colors: {
-    primary: "#412234",
-    secondary: "#ead7d7",
-    tertiary: "#F2F2F2",
-    text: "#412234",
+    primary: "#0c1b33",
+    secondary: "#dbfe87",
+    tertiary: "#dbfe87",
+    text: "#0c1b33",
     background: "#ffffff",
-    pink: "#b49fcc",
+    pink: "#03b5aa",
   },
   breakpoints: {
     xs: "480px",
