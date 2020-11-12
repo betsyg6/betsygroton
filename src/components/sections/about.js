@@ -28,10 +28,9 @@ const StyledContentWrapper = styled(ContentWrapper)`
       justify-content: space-between;
     }
     .section-title {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       color: ${({ theme }) => theme.colors.pink};
       text-shadow: 0.5px 0.5px 1px #373636;
-
       font-family: ${({ theme }) => theme.fonts.primary};
     }
     .inner-wrapper {
@@ -46,10 +45,10 @@ const StyledContentWrapper = styled(ContentWrapper)`
     .image-content {
       width: 100%;
       max-width: 18rem;
-      margin-top: 4rem;
+      margin-top: 8rem;
       margin-left: 0;
       @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-        margin-left: 2rem;
+        margin-left: 1rem;
       }
     }
     .about-author {

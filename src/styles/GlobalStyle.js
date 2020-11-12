@@ -78,10 +78,11 @@ const GlobalStyle = createGlobalStyle`
 
     h3 {
         font-weight: 700;
-        font-size: 1.75rem;
+        font-size: 2rem;
         line-height: 2.25rem;
-        color: ${({ theme }) => theme.colors.primary};
-        margin-bottom: 3rem;
+        color: ${({ theme }) => theme.colors.pink};
+        text-shadow: 0.5px 0.5px 1px #373636;
+        margin-bottom: 1rem;
     }
 
     h4 {

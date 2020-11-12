@@ -42,8 +42,8 @@ const StyledContentWrapper = styled(ContentWrapper)`
         margin-bottom: 3rem;
       }
       .section-title {
-        padding-right: 2.5rem;
-        padding-left: 2.5rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
         font-family: ${({ theme }) => theme.fonts.headings};
       }
       .avatar {
