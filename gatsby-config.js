@@ -18,7 +18,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     // `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
-    `gatsby-plugin-open-graph-images`,
+    // `gatsby-plugin-open-graph-images`,
     // {
     //   resolve: `gatsby-plugin-gtag`,
     //   options: {
