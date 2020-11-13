@@ -7,7 +7,7 @@ module.exports = {
     description: config.siteDescription,
     author: config.author,
     siteUrl: config.siteUrl,
-    image: config.image,
+    // image: config.image,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,6 +18,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     // `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-open-graph-images`,
     // {
     //   resolve: `gatsby-plugin-gtag`,
     //   options: {

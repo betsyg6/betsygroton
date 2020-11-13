@@ -16,7 +16,6 @@ const SEO = ({ description, lang, meta, title, image }) => {
             title
             description
             author
-            image
           }
         }
       }
@@ -24,7 +23,7 @@ const SEO = ({ description, lang, meta, title, image }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const ogImageUrl = image || site.siteMetadata.image
+  // const ogImageUrl = image || site.siteMetadata.image
 
   return (
     <Helmet
@@ -78,16 +77,18 @@ const SEO = ({ description, lang, meta, title, image }) => {
           name: `theme-color`,
           content: colors.primary,
         },
-        {
-          property: `og:image`,
-          content: ogImageUrl,
-        },
-        {
-          property: `image`,
-          content: ogImageUrl,
-        },
+        // {
+        //   property: `og:image`,
+        //   content: ogImageUrl,
+        // },
+        // {
+        //   property: `image`,
+        //   content: ogImageUrl,
+        // },
       ].concat(meta)}
-    />
+    >
+      <meta property="og:image" content={domain + "/og-image/index.png"} />
+    </Helmet>
   )
 }
 
