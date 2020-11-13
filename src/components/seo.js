@@ -87,7 +87,7 @@ const SEO = ({ description, lang, meta, title, image }) => {
         // },
       ].concat(meta)}
     >
-      <meta property="og:image" content={domain + "/public.png"} />
+      {/* <meta property="og:image" content={domain + "/public.png"} /> */}
     </Helmet>
   )
 }
