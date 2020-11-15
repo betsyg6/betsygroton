@@ -10,7 +10,7 @@ console.log(image)
 
 const { colors } = Theme
 
-const SEO = ({ description, lang, meta, title, image }) => {
+const SEO = ({ description, lang, meta, title, siteUrl }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +19,7 @@ const SEO = ({ description, lang, meta, title, image }) => {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -80,17 +81,13 @@ const SEO = ({ description, lang, meta, title, image }) => {
           name: `theme-color`,
           content: colors.primary,
         },
-        {
-          property: `og:image`,
-          content: `http://betsygroton.com/${image}`,
-        },
-        {
-          property: `image`,
-          content: `http://betsygroton.com/${image}`,
-        },
       ].concat(meta)}
     >
-      {/* <meta property="og:image" content={domain + "/public.png"} /> */}
+      <meta
+        property="og:image"
+        content={`${site.siteMetadata.siteUrl}${image}`}
+      />
+      <meta property="image" content={`${site.siteMetadata.siteUrl}${image}`} />
     </Helmet>
   )
 }
