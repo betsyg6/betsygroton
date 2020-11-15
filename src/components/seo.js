@@ -5,6 +5,9 @@ import { useStaticQuery, graphql } from "gatsby"
 // import defaultOpenGraphImage from '../../content/assets/opengraph-default.png'
 import Theme from "../styles/Theme"
 
+import image from "./portfolio.png"
+console.log(image)
+
 const { colors } = Theme
 
 const SEO = ({ description, lang, meta, title, image }) => {
@@ -77,14 +80,14 @@ const SEO = ({ description, lang, meta, title, image }) => {
           name: `theme-color`,
           content: colors.primary,
         },
-        // {
-        //   property: `og:image`,
-        //   content: ogImageUrl,
-        // },
-        // {
-        //   property: `image`,
-        //   content: ogImageUrl,
-        // },
+        {
+          property: `og:image`,
+          content: `http://betsygroton.com/${image}`,
+        },
+        {
+          property: `image`,
+          content: `http://betsygroton.com/${image}`,
+        },
       ].concat(meta)}
     >
       {/* <meta property="og:image" content={domain + "/public.png"} /> */}
