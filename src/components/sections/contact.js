@@ -23,7 +23,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
   && {
     width: 100%;
     /* Don't stretch container over the full page width */
-    max-width: 45rem;
+    max-width: 35rem;
     height: 100%;
     display: inline-block;
     p {
@@ -33,7 +33,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
     .profile {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: start;
       margin-top: 3rem;
       margin-bottom: 2rem;
       @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
@@ -42,8 +42,8 @@ const StyledContentWrapper = styled(ContentWrapper)`
         margin-bottom: 3rem;
       }
       .section-title {
-        padding-right: 5rem;
-        padding-left: 5rem;
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
         font-family: ${({ theme }) => theme.fonts.headings};
       }
       .avatar {

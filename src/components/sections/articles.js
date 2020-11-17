@@ -41,7 +41,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
     }
     .articles {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       overflow-x: scroll;
       overflow-y: hidden;
       -webkit-overflow-scrolling: touch;
