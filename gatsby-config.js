@@ -62,14 +62,23 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        fonts: [
-          {
-            family: `League Script`,
-          },
-        ],
+        google: {
+          families: ["League Script"],
+        },
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `League Script`,
+    //       },
+    //     ],
+    //     display: "swap",
+    //   },
+    // },
   ],
 }
