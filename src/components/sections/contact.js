@@ -23,7 +23,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
   && {
     width: 100%;
     /* Don't stretch container over the full page width */
-    max-width: 35rem;
+    max-width: 40rem;
     height: 100%;
     display: inline-block;
     p {

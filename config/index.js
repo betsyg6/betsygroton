@@ -30,6 +30,10 @@ module.exports = {
       name: "Medium",
       url: "https://grotoned.medium.com/",
     },
+    {
+      name: "Resume",
+      url: "https://betsyg6.github.io/Resume/",
+    },
   ],
 
   navLinks: {
