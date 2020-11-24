@@ -201,9 +201,10 @@ const StyledProject = styled(motion.div)`
 `
 
 const Projects = ({ content }) => {
+  // console.log(content)
   const sectionDetails = content[0].node
   const projects = content.slice(1, content.length)
-
+  // console.log(projects)
   // visibleProject is needed to show which project is currently
   // being viewed in the horizontal slider on mobile and tablet
   const [visibleProject, setVisibleProject] = useState(1)
@@ -234,6 +235,7 @@ const Projects = ({ content }) => {
     projects.forEach(project => {
       initial[project.node.frontmatter.position] = false
     })
+    // console.log(projects)
     setOnScreen(initial)
   }, [])
 
