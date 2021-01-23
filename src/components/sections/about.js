@@ -111,6 +111,16 @@ const About = ({ content }) => {
             className="about-author"
             fluid={frontmatter.image.childImageSharp.fluid}
           />
+          <div>
+            <br />
+            <iframe
+              src="https://open.spotify.com/embed/playlist/3hsPluHiVB550Ent0VknX0"
+              width="100%"
+              height="200"
+              frameBorder="0"
+              allow="encrypted-media"
+            />
+          </div>
         </motion.div>
       </StyledContentWrapper>
     </StyledSection>

@@ -84,6 +84,7 @@ const Contact = ({ content }) => {
     >
       <StyledContentWrapper>
         <h3 className="section-title">{frontmatter.title}</h3>
+
         <MDXRenderer>{body}</MDXRenderer>
         <div className="profile">
           <Img
